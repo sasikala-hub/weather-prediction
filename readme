@@ -1,0 +1,81 @@
+Weather Data Analysis
+This repository contains a Streamlit application designed to analyze weather data and visualize the relationships between various weather features and atmospheric pressure. Users can upload a CSV file containing weather data, explore feature correlations, and visualize how each feature influences atmospheric pressure.
+
+Features
+File Upload: Upload your own CSV file containing weather data.
+
+Data Preview: View a preview of the first few rows of the uploaded dataset.
+
+Correlation Heatmap: Visualize the correlation between selected weather features.
+
+Feature vs Pressure Scatter Plot: Select a feature and plot it against atmospheric pressure to explore relationships.
+
+Data Requirements
+The app expects the CSV file to contain the following columns:
+
+Temperature (C) — Temperature in degrees Celsius.
+
+Wind Speed (km/h) — Wind speed in kilometers per hour.
+
+Apparent Temperature (C) — Apparent temperature (feels like temperature) in degrees Celsius.
+
+Humidity — Humidity in percentage.
+
+Wind Bearing (degrees) — Wind direction in degrees.
+
+Visibility (km) — Visibility in kilometers.
+
+Pressure (millibars) — Atmospheric pressure in millibars (this column will be used to analyze relationships with other features).
+
+Requirements
+Before running the app, make sure to install the following Python libraries:
+
+Streamlit
+
+Pandas
+
+Seaborn
+
+Matplotlib
+
+You can install the required libraries using pip:
+
+bash
+Copy
+pip install streamlit pandas seaborn matplotlib
+How to Run the Application
+Clone or download this repository to your local machine.
+
+Open a terminal or command prompt and navigate to the project folder.
+
+Run the following command to start the Streamlit app:
+
+bash
+Copy
+streamlit run app.py
+The application will open in your default web browser.
+
+How to Use the Application
+Upload a CSV File: Click the "Upload a CSV file" button and select your weather dataset. Make sure the file contains columns like Temperature (C), Wind Speed (km/h), Apparent Temperature (C), Humidity, Wind Bearing (degrees), Visibility (km), and Pressure (millibars).
+
+Data Preview: After uploading the file, the app will display the first few rows of the dataset.
+
+Correlation Heatmap: The app will generate a heatmap showing the correlation between the selected weather features and atmospheric pressure. This helps visualize which features are strongly related.
+
+Feature vs Pressure Scatter Plot: You can select a feature from the dropdown menu (e.g., Temperature (C), Wind Speed (km/h), etc.) and visualize the relationship between that feature and atmospheric pressure with a scatter plot.
+
+Example of Usage
+Upload a CSV file containing weather data with the expected columns.
+
+View the data preview to ensure it has been loaded correctly.
+
+Explore the correlation heatmap to understand how the features are related.
+
+Select a feature (such as Temperature (C)) and view how it correlates with atmospheric pressure in the scatter plot.
+
+Project Structure
+app.py: The main Streamlit application that contains the functionality for uploading, processing, and visualizing data.
+
+README.md: This file containing the project documentation and instructions.
+
+LICENSE (optional): The project license file, if applicable.
